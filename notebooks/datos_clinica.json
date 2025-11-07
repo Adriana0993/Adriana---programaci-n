@@ -36,7 +36,7 @@
     "genero": "M",
     "provincia": "Limón",
     "canton": "Puerto Viejo",
-    "enfermedades": ["migraña", "hipertension"],
+    "enfermedades": ["migraña", "hipertension" ,"migraña"],
     "medicamentos": ["acetaminofen", "losartan"]
   },
   {
@@ -46,7 +46,7 @@
     "genero": "F",
     "provincia": "Guanacaste",
     "canton": "Liberia",
-    "enfermedades": ["dolor cronico", "gripe"],
+    "enfermedades": ["dolor cronico", "gripe" ],
     "medicamentos": ["acetaminofen", "tramadol"]
   },
   {
