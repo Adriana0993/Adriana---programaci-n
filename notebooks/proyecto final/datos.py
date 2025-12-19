@@ -63,52 +63,57 @@ def cargar_compras(archivo_csv='compras.csv'):
 
 if __name__ == '__main__':
     compra_inicial = [
-        {"Prodcuto": "Almohada Ortopédica", "Cantidad": 25, "Precio": 1400, "Fecha": "2025-10-22"} 
-        {"Producto": "Edredón Amici 6 pz", "Cantidad": 5 , "Precio": 10500, "Fecha": "2025-10-22" }
-        {"Producto": "Cobija matrimonial mexicana" , "Cantidad": 3, "Precio": 10555, "Fecha": "2025-10-22"}
-        {"Producto": "Edredón Amici 6 pz", "Cantidad": 5, "Precio": 10500, "Fecha": "2025-10-24"} 
-        {"Producto": "Almohada Ortopédica": "Cantidad": 25, "Precio": 1400, "Fecha": "2025-10-24"}
-        {"Producto": "Edredón matri bordado Miel Home", "Cantidad": 1, "Precio": 8000, "Fecha": "2025-10-24"}
-        {"Prodcuto": "Cobija matrimonial 3b", "Cantidad": 4, "Precio": 4000, "Fecha": "2025-10-24"}
-        {"Producto": "Mantel navideño", "Cantidad": 2, "Precio": 4000, "Fecha": "2025-10-24"}
-        {"Producto": "Sábana matriminial Amici", "Cantidad": 2, "Precio": 5500, "Fecha": "2025-10-24"}
-        {"Producto": "Escurridor de platos", "Cantidad": 1, "Precio": 10500, "Fecha": "2025-10-24"}
-        {"Producto": "Almohada Ortopédica", "Cantidad": 20, "Precio": 1400, "Fecha": "2025-10-23"}
-        {"Producto": "Edredón Amici 6 pz", "Cantidad": 2, "Precio": 10500, "Fecha": "2025-10-23"}
-        {"Producto": "Edredón matri bordado Miel Home", "Cantidad": 2, "Precio": 8000, "Fecha": "2025-10-23"}
-        {"Producto": "Cobija borrego", "Cantidad": 2, "Precio": 7600, "Fecha": "2025-10-23" }
-        {"Producto": "Cobija matrimonial 3b", "Cantidad": 2, "Precio": 4000, "Fecha:" "2025-10-23"}
-        {"Producto": "Escurridor de platos", "Cantidad": 1, "Precio": 10500, "Fecha": "2025-10-25"}
-        {"Producto": "Edredón Amici 6 pz", "Cantidad": 5, "Precio": 10500, "Fecha": "2025-10-25"}
-        {"Producto": "Cobija matrimonial 3b", "Cantidad": 4, "Precio": 4000, "Fecha": "2025-10-25"}
-        {"Producto": "Sabana matrimonial variada", "Cantidad": 2, "Precio": 5500, "Fecha": "2025-10-25"}
-        {"Producto": "Mantel navideño", "Cantidad": 1, "Precio": 4000, "Fecha": "2025-10-25"}
-        {"Producto": "Almohada Ortopédica", "Cantidad": 35, "Precio": 1400, "Fecha": "2025-10-25"}
-        {"Producto": "Cortina tegal Lemond", "Cantidad": 2, "Precio": 6500, "Fecha": "2025-10-25"}
-        {"Producto": "Cortina argollas 2 pz", "Cantidad": 2, "Precio": 7000, "Fecha": "2025-10-25"}
-        {"Producto": "Edredón Amici 6 pz", "Cantidad": 4, "Precio": 10500, "Fecha": "2025-11-04"}
-        {"Producto": "Cortina navideña doble", "Cantidad": 1, "Precio": 7500, "Fecha": "2025-11-04"}
-        {"Producto": "Edredón full Adriana", "Cantidad": 4, "Precio": 11000, "Fecha": "2025-11-04"}
-        {"Producto": "Cobija matrimonial Samuka", "Cantidada": 3, "Precio": 6500, "Fecha": "2025-11-04"}
-        {"Producto": "Almohada Ortopédica", "Cantidad": 20, "Precio": 1400, "Fecha": "2025-11-04"}
-        {"Producto": "Almohada Ortopédica", "Cantidad": 55, "Precio": 1400, "Fecha": "2025-11-13"}
-        {"Producto": "Edredón matri bordado Miel Home", "Cantidad": 16, "Precio": 10500, "Fecha": "2025-11-13"}
-        {"Producto": "Almohada Ortopédica", "Cantidad": 20, "Precio": 1400, "Fecha": "2025-11-11"}
-        {"Producto": "Cobija matrimonial 3b", "Cantidad": 2, "Precio": 4000, "Fecha": "2025-11-11"}
-        {"Producto": "Edredón Lemond 9 pz", "Cantidad": 7, "Precio": 10540, "Fecha": "2025-11-11"}
-        {"Producto": "Almohada Ortopédica", "Cantidad": 20, "Precio": 1400, "Fecha": "2025-11-12"}
-        {"Producto": "Edredón matri bordado Miel Home", "Cantidad": 8, "Precio": 10450, "Fecha": "2025-11-12"}
-        {"Producto": "Cobija matrtimonial 3b", "Cantidad": 3, "Precio": 4000, "Fecha": "2025-11-12"}
-        {"Producto": "Cobija matrimonial 3b", "Cantidad": 1, "Precio": 4000, "Fecha": "2025-11-13"}
-        {"Producto": "Edredón matri bordado Miel Home", "Cantidad": 8, "Precio": 10450, "Fecha": "2025-11-13"}
-        {"Producto": "Almohada Ortopédica", "Cantidad": 20, "Precio": 1400, "Fecha": "2025-11-14"}
-        {"Producto": "Edredón matri bordado Miel Home", "Cantidad": 6, "Precio": 10450, "Fecha": "2025-11-14"}
-        {"Producto": "Cobija matrimonial 3b", "Cantidad": 4, "Precio": 4000, "Fecha": "2025-11-14"}
-        {"Producto": "Cobija borrego king", "Cantidad": 4, "Precio": 8500, "Fecha": "2025-11-14"}
-        {"Producto": "Forro sillón navideño", "Cantidad": 2, "Precio": 11000, "Fecha": "2025-11-14"}
-        {"Producto": "Alfombra lisa", "Cantidad": 1, "Precio": 7500, "Fecha": "2025-11-14"}
-        {"Producto": "Alfombra navideña", "Cantidad": 2, "Precio": 7000, "Fecha": "2025-11-14"}
-        {"Producto": " Set navideño", "Cantidad": 2, "Precio": 3000, "Fecha": "2025-11-14"}
+        {"Prodcuto": "Almohada Ortopédica", "Cantidad": 25, "Precio": 1400, "Fecha": "2025-10-22"}, 
+        {"Producto": "Edredón Amici 6 pz", "Cantidad": 5 , "Precio": 10500, "Fecha": "2025-10-22" },
+        {"Producto": "Cobija matrimonial mexicana" , "Cantidad": 3, "Precio": 10555, "Fecha": "2025-10-22"},
+        {"Producto": "Edredón Amici 6 pz", "Cantidad": 5, "Precio": 10500, "Fecha": "2025-10-24"}, 
+        {"Producto": "Almohada Ortopédica","Cantidad": 25, "Precio": 1400, "Fecha": "2025-10-24"},
+        {"Producto": "Edredón matri bordado Miel Home", "Cantidad": 1, "Precio": 8000, "Fecha": "2025-10-24"},
+        {"Prodcuto": "Cobija matrimonial 3b", "Cantidad": 4, "Precio": 4000, "Fecha": "2025-10-24"},
+        {"Producto": "Mantel navideño", "Cantidad": 2, "Precio": 4000, "Fecha": "2025-10-24"},
+        {"Producto": "Sábana matriminial Amici", "Cantidad": 2, "Precio": 5500, "Fecha": "2025-10-24"},
+        {"Producto": "Escurridor de platos", "Cantidad": 1, "Precio": 10500, "Fecha": "2025-10-24"},
+        {"Producto": "Almohada Ortopédica", "Cantidad": 20, "Precio": 1400, "Fecha": "2025-10-23"},
+        {"Producto": "Edredón Amici 6 pz", "Cantidad": 2, "Precio": 10500, "Fecha": "2025-10-23"},
+        {"Producto": "Edredón matri bordado Miel Home", "Cantidad": 2, "Precio": 8000, "Fecha": "2025-10-23"},
+        {"Producto": "Cobija borrego", "Cantidad": 2, "Precio": 7600, "Fecha": "2025-10-23" },
+        {"Producto": "Cobija matrimonial 3b", "Cantidad": 2, "Precio": 4000, "Fecha": "2025-10-23"},
+        {"Producto": "Escurridor de platos", "Cantidad": 1, "Precio": 10500, "Fecha": "2025-10-25"},
+        {"Producto": "Edredón Amici 6 pz", "Cantidad": 5, "Precio": 10500, "Fecha": "2025-10-25"},
+        {"Producto": "Cobija matrimonial 3b", "Cantidad": 4, "Precio": 4000, "Fecha": "2025-10-25"},
+        {"Producto": "Sabana matrimonial variada", "Cantidad": 2, "Precio": 5500, "Fecha": "2025-10-25"},
+        {"Producto": "Mantel navideño", "Cantidad": 1, "Precio": 4000, "Fecha": "2025-10-25"},
+        {"Producto": "Almohada Ortopédica", "Cantidad": 35, "Precio": 1400, "Fecha": "2025-10-25"},
+        {"Producto": "Cortina tegal Lemond", "Cantidad": 2, "Precio": 6500, "Fecha": "2025-10-25"},
+        {"Producto": "Cortina argollas 2 pz", "Cantidad": 2, "Precio": 7000, "Fecha": "2025-10-25"},
+        {"Producto": "Edredón Amici 6 pz", "Cantidad": 4, "Precio": 10500, "Fecha": "2025-11-04"},
+        {"Producto": "Cortina navideña doble", "Cantidad": 1, "Precio": 7500, "Fecha": "2025-11-04"},
+        {"Producto": "Edredón full Adriana", "Cantidad": 4, "Precio": 11000, "Fecha": "2025-11-04"},
+        {"Producto": "Cobija matrimonial Samuka", "Cantidada": 3, "Precio": 6500, "Fecha": "2025-11-04"},
+        {"Producto": "Almohada Ortopédica", "Cantidad": 20, "Precio": 1400, "Fecha": "2025-11-04"},
+        {"Producto": "Almohada Ortopédica", "Cantidad": 55, "Precio": 1400, "Fecha": "2025-11-13"},
+        {"Producto": "Edredón matri bordado Miel Home", "Cantidad": 16, "Precio": 10500, "Fecha": "2025-11-13"},
+        {"Producto": "Almohada Ortopédica", "Cantidad": 20, "Precio": 1400, "Fecha": "2025-11-11"},
+        {"Producto": "Cobija matrimonial 3b", "Cantidad": 2, "Precio": 4000, "Fecha": "2025-11-11"},
+        {"Producto": "Edredón Lemond 9 pz", "Cantidad": 7, "Precio": 10540, "Fecha": "2025-11-11"},
+        {"Producto": "Almohada Ortopédica", "Cantidad": 20, "Precio": 1400, "Fecha": "2025-11-12"},
+        {"Producto": "Edredón matri bordado Miel Home", "Cantidad": 8, "Precio": 10450, "Fecha": "2025-11-12"},
+        {"Producto": "Cobija matrtimonial 3b", "Cantidad": 3, "Precio": 4000, "Fecha": "2025-11-12"},
+        {"Producto": "Cobija matrimonial 3b", "Cantidad": 1, "Precio": 4000, "Fecha": "2025-11-13"},
+        {"Producto": "Edredón matri bordado Miel Home", "Cantidad": 8, "Precio": 10450, "Fecha": "2025-11-13"},
+        {"Producto": "Almohada Ortopédica", "Cantidad": 20, "Precio": 1400, "Fecha": "2025-11-14"},
+        {"Producto": "Edredón matri bordado Miel Home", "Cantidad": 6, "Precio": 10450, "Fecha": "2025-11-14"},
+        {"Producto": "Cobija matrimonial 3b", "Cantidad": 4, "Precio": 4000, "Fecha": "2025-11-14"},
+        {"Producto": "Cobija borrego king", "Cantidad": 4, "Precio": 8500, "Fecha": "2025-11-14"},
+        {"Producto": "Forro sillón navideño", "Cantidad": 2, "Precio": 11000, "Fecha": "2025-11-14"},
+        {"Producto": "Alfombra lisa", "Cantidad": 1, "Precio": 7500, "Fecha": "2025-11-14"},
+        {"Producto": "Alfombra navideña", "Cantidad": 2, "Precio": 7000, "Fecha": "2025-11-14"},
+        {"Producto": " Set navideño", "Cantidad": 2, "Precio": 3000, "Fecha": "2025-11-14"},
         {"Producto": "Cobija full con fundas", "Cantidad": 2, "Precio": 8000, "Fecha": "2025-11-14"}
-    ]_
+    ]
+
     guardar_csv(compra_inicial)
+
+
+
+ 

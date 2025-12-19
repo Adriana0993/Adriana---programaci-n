@@ -25,8 +25,9 @@ def analiza_compras(compras):
         resumen_por_fecha = df.groupby("Fecha")["Subtotal"]
         print(resumen_por_fecha)
     except Exception as e:
-    
-def total_compras(compras):
+        def total_compras(compras):
+            return 0
+        
     try:
         df = compras
         df["Subtotal"] = df["Cantidad"] * ["Precio"]

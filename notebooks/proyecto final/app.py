@@ -5,7 +5,8 @@ import os
 
 COMPRAS_DATA = []
 print("Cargando datos  de compras desde compras.csv...")
-from datos import guardar_csv, ingresar_datos, cargar_compras, analiza_datos
+from datos import guardar_csv, ingresar_datos, cargar_compras
+from analisis import analiza_compra
 def limpiar_pantalla():
     os.system("cls" if os.name == "nt" else "clear")
 
