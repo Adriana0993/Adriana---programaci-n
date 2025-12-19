@@ -10,7 +10,7 @@ def guardar_csv(compras, archivo= 'compra.csv'):
             columnas = ["Producto" , "Cantidad" , "Precio" , "Fecha"]
             writer = csv.DictWriter(base, fieldnames=columnas)
 
-            writer.writerheader()
+            writer.writeheader()
             writer.writerows(compras)
             print(f'Datos guardados correctamente en {archivo}.')
     except Exception as e:
@@ -19,14 +19,14 @@ def guardar_csv(compras, archivo= 'compra.csv'):
 def ingresar_datos(compras):
     while True:
         try:
-            producto = input("Ingrese el nombre del producto").upper()
+            producto = input("Ingrese el nombre del producto: ").upper()
             cantidad = int(input("Ingrese la cantidad comprada: "))
             precio = int(input("Ingrese el precio del prodcuto: "))
             fecha = input("ingrese la fecha de la venta (YYY_MM_DD): ")
 
             
             compra = {
-                "Prodcuto": producto,
+                "Producto": producto,
                 "Cantidad" : cantidad,
                 "Precio": precio,
                 "Fecha": fecha
@@ -66,13 +66,13 @@ def cargar_compras(archivo_csv='compras.csv'):
 
 if __name__ == '__main__':
     compra_inicial = [
-        {"Prodcuto": "Almohada Ortopédica", "Cantidad": 25, "Precio": 1400, "Fecha": "2025-10-22"}, 
+        {"Producto": "Almohada Ortopédica", "Cantidad": 25, "Precio": 1400, "Fecha": "2025-10-22"}, 
         {"Producto": "Edredón Amici 6 pz", "Cantidad": 5 , "Precio": 10500, "Fecha": "2025-10-22" },
         {"Producto": "Cobija matrimonial mexicana" , "Cantidad": 3, "Precio": 10555, "Fecha": "2025-10-22"},
         {"Producto": "Edredón Amici 6 pz", "Cantidad": 5, "Precio": 10500, "Fecha": "2025-10-24"}, 
         {"Producto": "Almohada Ortopédica","Cantidad": 25, "Precio": 1400, "Fecha": "2025-10-24"},
         {"Producto": "Edredón matri bordado Miel Home", "Cantidad": 1, "Precio": 8000, "Fecha": "2025-10-24"},
-        {"Prodcuto": "Cobija matrimonial 3b", "Cantidad": 4, "Precio": 4000, "Fecha": "2025-10-24"},
+        {"Producto": "Cobija matrimonial 3b", "Cantidad": 4, "Precio": 4000, "Fecha": "2025-10-24"},
         {"Producto": "Mantel navideño", "Cantidad": 2, "Precio": 4000, "Fecha": "2025-10-24"},
         {"Producto": "Sábana matriminial Amici", "Cantidad": 2, "Precio": 5500, "Fecha": "2025-10-24"},
         {"Producto": "Escurridor de platos", "Cantidad": 1, "Precio": 10500, "Fecha": "2025-10-24"},
@@ -92,7 +92,7 @@ if __name__ == '__main__':
         {"Producto": "Edredón Amici 6 pz", "Cantidad": 4, "Precio": 10500, "Fecha": "2025-11-04"},
         {"Producto": "Cortina navideña doble", "Cantidad": 1, "Precio": 7500, "Fecha": "2025-11-04"},
         {"Producto": "Edredón full Adriana", "Cantidad": 4, "Precio": 11000, "Fecha": "2025-11-04"},
-        {"Producto": "Cobija matrimonial Samuka", "Cantidada": 3, "Precio": 6500, "Fecha": "2025-11-04"},
+        {"Producto": "Cobija matrimonial Samuka", "Cantidad": 3, "Precio": 6500, "Fecha": "2025-11-04"},
         {"Producto": "Almohada Ortopédica", "Cantidad": 20, "Precio": 1400, "Fecha": "2025-11-04"},
         {"Producto": "Almohada Ortopédica", "Cantidad": 55, "Precio": 1400, "Fecha": "2025-11-13"},
         {"Producto": "Edredón matri bordado Miel Home", "Cantidad": 16, "Precio": 10500, "Fecha": "2025-11-13"},

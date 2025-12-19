@@ -22,7 +22,7 @@ def menu():
         if opción == "1":
             ingresar_datos(COMPRAS_DATA)
         elif opción == "2":
-            analiza_datos(COMPRAS_DATA)
+            analiza_compras(COMPRAS_DATA)
         elif opción == "3":
             VENTAS_DATA = cargar_compras()
         elif opción == "4":
