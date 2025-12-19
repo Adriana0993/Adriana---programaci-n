@@ -22,6 +22,14 @@ def ingresar_datos(compras):
             cantidad = int(input("Ingrese la cantidad comprada: "))
             precio = int(input("Ingrese el precio del prodcuto: "))
             fecha = input("ingrese la fecha de la venta (YYY_MM_DD): ")
+
+            
+            compra = {
+                "Prodcuto": producto,
+                "Cantidad" : cantidad,
+                "Precio": precio,
+                "Fecha": fecha
+            }
             if cantidad <= 0:
                 print("La cantidad debe ser mayor a cero")
 
@@ -34,15 +42,9 @@ def ingresar_datos(compras):
             print(f"Error al ingresar los datos: {e}")
             continue
             
-            compra = {
-                "Prodcuto": producto,
-                "Cantidad" : cantidad,
-                "Precio": precio,
-                "Fecha": fecha
+          
 
-            }
-
-        compras.append(compras)
+        compras.append(compra)
         print("Compra ingresada con éxito")
             
         continuar = input("¿Deaea ingresar otra compra? (s/n): ").lower()

@@ -3,7 +3,7 @@ def analiza_compras(compras):
     try:
         df = pd.DataFrame(compras)
         if df.empty:
-            print("No hay datos de cpmpra.")
+            print("No hay datos de compra.")
             return
         print("\n ANÁLISIS DE COMPRAS ")
         
