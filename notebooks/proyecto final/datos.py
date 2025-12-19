@@ -8,9 +8,10 @@ def guardar_csv(compras, archivo= 'compra.csv'):
     try:
         with open(archivo, mode="w", newline= '', encoding= 'utf-8') as base:
             columnas = ["Producto" , "Cantidad" , "Precio" , "Fecha"]
-            writer = csv.dictwriter(base, fielname= columnas)
+            writer = csv.DictWriter(base, fieldnames=columnas)
+
             writer.writerheader()
-            writer.writerrows(compras)
+            writer.writerows(compras)
             print(f'Datos guardados correctamente en {archivo}.')
     except Exception as e:
          print(f'Error al guardar los datos en {archivo}: {e}')
